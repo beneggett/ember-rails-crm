@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: ben
+  pool: 5
+
+development:
+  <<: *default
+  database: ember_crm_development
+
+test:
+  <<: *default
+  database: ember_crm_test
+
+production:
+  <<: *default
+  database: ember_crm_production

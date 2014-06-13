@@ -1,0 +1,8 @@
+header
+  article
+    .logo
+      h1
+        a href="/" Ben's CRM
+
+section#main
+  = outlet
