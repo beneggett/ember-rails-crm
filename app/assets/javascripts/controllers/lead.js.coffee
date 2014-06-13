@@ -14,3 +14,4 @@ App.LeadController = Ember.ObjectController.extend
     delete: ->
       @get('model').destroyRecord().then =>
         @transitionToRoute 'leads'
+

@@ -1,11 +1,16 @@
 article#leads
   h1
     | Leads
-    link-to 'leads.new' | New Lead
+    link-to 'leads.new' | + New Lead
   view Ember.TextField value=search placeholder="Search by name" classNames="search"
-
+  p
+    a.right click="sortBy false"  Reverse Sort
   ul
     each lead in leads
       link-to 'lead' lead tagName="li"
         lead.fullName
+if alertMessage
+  .message
+    alertMessage
+
 outlet

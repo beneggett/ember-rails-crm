@@ -1,3 +1,5 @@
+$primary: #6916df;
+$lighter: lighten($primary, 40%);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic);
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700);
 
@@ -89,7 +91,7 @@ a.delete {
 }
 
 header {
-  background: #f57011;
+  background: $primary;
   height: 47px;
 }
 
@@ -182,7 +184,7 @@ article#leads ul li {
 }
 
 article#leads ul li:hover, article#leads ul li.active {
-  background: #f8e5ce;
+  background: $lighter;
 }
 
 article#lead {
@@ -223,7 +225,7 @@ label {
 }
 
 input[type='submit'] {
-  background: #f57011;
+  background: $primary;
   border: none;
   padding: 5px 25px 8px;
   font-weight: 500;
@@ -241,4 +243,14 @@ footer {
   background: #ffcccb;
   padding: 7px 15px 10px;
   margin: 0px 0 18px;
+}
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+.message{
+  background-color: darken($primary, 15%);
+  color: lighten($lighter, 20%);
 }
